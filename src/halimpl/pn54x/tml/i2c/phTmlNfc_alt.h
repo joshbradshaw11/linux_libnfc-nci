@@ -28,30 +28,11 @@
  *  3 = OM557x on BeagleBone black
  *
  */
-#define CONFIGURATION    1
 
-#if (CONFIGURATION == 1)
 /* OM557x on Raspberry Pi */
- #define I2C_BUS         "/dev/i2c-1"
- #define I2C_ADDRESS     0x28
- #define PIN_INT         23
- #define PIN_ENABLE      24
-#elif (CONFIGURATION == 2)
-/* OM557x on UdooNeo */
- #define I2C_BUS         "/dev/i2c-1"
- #define I2C_ADDRESS     0x28
- #define PIN_INT         105
- #define PIN_ENABLE      149
-#elif (CONFIGURATION == 3)
-/* OM557x on BeagleBone Black */
- #define I2C_BUS         "/dev/i2c-2"
- #define I2C_ADDRESS     0x28
- #define PIN_INT         61
- #define PIN_ENABLE      30
-#else
-/* Custom configuration */
- #define I2C_BUS         "/dev/i2c-1"
- #define I2C_ADDRESS     0x28
- #define PIN_INT         23
- #define PIN_ENABLE      24
-#endif
+#define I2C_BUS         "/dev/i2c-4"
+#define I2C_ADDRESS     0x50
+#define PIN_INT         61
+#define PIN_ENABLE      60
+
+
