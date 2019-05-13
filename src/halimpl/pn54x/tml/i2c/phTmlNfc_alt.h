@@ -29,9 +29,8 @@
  *
  */
 
-/* OM557x on Raspberry Pi */
 #define I2C_BUS         "/dev/i2c-4"
-#define I2C_ADDRESS     0x50
+#define I2C_ADDRESS     0x28
 #define PIN_INT         61
 #define PIN_ENABLE      60
 
