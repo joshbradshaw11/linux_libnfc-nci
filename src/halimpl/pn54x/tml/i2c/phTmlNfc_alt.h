@@ -30,8 +30,8 @@
  */
 
 #define I2C_BUS         "/dev/i2c-4"
-#define I2C_ADDRESS     0x29
-#define PIN_INT         229
-#define PIN_ENABLE      230
+#define I2C_ADDRESS     0x28
+#define PIN_INT         28
+#define PIN_ENABLE      29
 
 
