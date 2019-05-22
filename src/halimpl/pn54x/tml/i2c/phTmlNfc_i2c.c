@@ -453,6 +453,13 @@ int phTmlNfc_i2c_read(void *pDevHandle, uint8_t * pBuffer, int nNbBytesToRead)
             return -1;
         }
     }
+    printf("ROUT-> ");
+    for (int i = 0: i < 260; i++;)
+    {
+        printf("0x%02X ", pBuffer[i]);
+    }
+    printf("\n");
+
     return numRead;
 }
 
@@ -472,6 +479,14 @@ int phTmlNfc_i2c_read(void *pDevHandle, uint8_t * pBuffer, int nNbBytesToRead)
 *******************************************************************************/
 int phTmlNfc_i2c_write(void *pDevHandle, uint8_t * pBuffer, int nNbBytesToWrite)
 {
+    printf("WOUT-> ");
+    for (int i = 0: i < nNbBytesToWrite; i++;)
+    {
+        printf("0x%02X ", pBuffer[i]);
+    }
+    printf("\n");
+
+
 #ifdef PHFL_TML_ALT_NFC
     // Overwrite handle
     pDevHandle = (void*)iI2CFd;
