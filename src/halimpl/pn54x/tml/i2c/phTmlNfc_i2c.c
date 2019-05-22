@@ -454,7 +454,7 @@ int phTmlNfc_i2c_read(void *pDevHandle, uint8_t * pBuffer, int nNbBytesToRead)
         }
     }
     printf("ROUT-> ");
-    for (int i = 0: i < 260; i++;)
+    for (int i = 0; i < 260; i++;)
     {
         printf("0x%02X ", pBuffer[i]);
     }
@@ -480,7 +480,7 @@ int phTmlNfc_i2c_read(void *pDevHandle, uint8_t * pBuffer, int nNbBytesToRead)
 int phTmlNfc_i2c_write(void *pDevHandle, uint8_t * pBuffer, int nNbBytesToWrite)
 {
     printf("WOUT-> ");
-    for (int i = 0: i < nNbBytesToWrite; i++;)
+    for (int i = 0; i < nNbBytesToWrite; i++;)
     {
         printf("0x%02X ", pBuffer[i]);
     }
