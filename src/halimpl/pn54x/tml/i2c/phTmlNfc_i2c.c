@@ -460,6 +460,8 @@ int phTmlNfc_i2c_read(void *pDevHandle, uint8_t * pBuffer, int nNbBytesToRead)
     }
     printf("\n");
 
+    printf("numRead: %d\n", numRead);
+
     return numRead;
 }
 
